@@ -7,6 +7,7 @@ use App\Models\Licitacion;
 use App\Models\Documentos;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 class DocumentosController extends Controller
 {
     public function create(string $id){
@@ -159,12 +160,12 @@ class DocumentosController extends Controller
         $documento_nombre = $request->file('documento');
         $nombre_original = $documento_nombre->getClientOriginalName();
         $nombre_sin_extencion = pathinfo($nombre_original,PATHINFO_FILENAME);
+        $timestamp = now()->timestamp;
+        $nombre_completo = strval($timestamp."-".$nombre_sin_extencion);
 
-        $nombre_documento = Carbon::now();
-        //dd("aqui");
-        $documento = $request->file('documento')->storeAs('public/Docs',strval($nombre_sin_extencion)."_".strval($nombre_documento).".pdf");
+        $documento = $request->file('documento')->storeAs('public/Docs',strval($nombre_completo).".pdf");
+
         
-        //$documentos = new Documentos();
         $documento_encontrado->licitacion_id = $documento_encontrado->licitacion_id;//
         $documento_encontrado->categoria = $documento_encontrado->categoria;
         $documento_encontrado->requisito = $documento_encontrado->requisito;
