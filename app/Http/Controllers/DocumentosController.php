@@ -40,12 +40,15 @@ class DocumentosController extends Controller
                         ->count();
             $resultado1 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','EJERCICIO (RECURSOS HUMANOS)')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado2 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','SEGUIMIENTO')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado3 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','RENDICION DE LA CUENTA PUBLICA')
+                                ->where("aplica","=","si")
                                 ->get();
             $progreso = Documentos::where("licitacion_id","=",$id)
                                 ->whereRaw("LENGTH(ruta_documento) != 0")
@@ -59,18 +62,23 @@ class DocumentosController extends Controller
                         ->count();
             $resultado1 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','SOLICITUD DE ADQUISICIÓN')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado2 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','RECEPCIÓN DE INSUMOS MEDICOS, ADMINISTRATIVOS Y ACTIVOS FIJOS')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado3 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','TRÁMITE DE PAGO')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado4 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','SEGUIMIENTO')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado5 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','RENDICIÓN DE LA CUENTA PÚBLICA')
+                                ->where("aplica","=","si")
                                 ->get();
             $progreso = Documentos::where("licitacion_id","=",$id)
                                 ->whereRaw("LENGTH(ruta_documento) != 0")
@@ -84,24 +92,31 @@ class DocumentosController extends Controller
                         ->count();
             $resultado1 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','SOLICITUD DE ADQUISICIÓN')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado2 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','ADQUISICIONES DE BIENES Y SERVICIOS MEDIANTE INVITACIÓN A CUANDO MENOS TRES PERSONAS:')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado3 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','RECEPCIÓN DE INSUMOS MEDICOS, ADMINISTRATIVOS Y ACTIVOS FIJOS')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado4 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','TRÁMITE DE PAGO')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado5 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','GENERALIDADES EN EL CASO DE PENALIZACIONES AL PROVEDOR')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado6 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','SEGUIMIENTO')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado7 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','RENDICIÓN DE LA CUENTA PÚBLICA')
+                                ->where("aplica","=","si")
                                 ->get();
             $progreso = Documentos::where("licitacion_id","=",$id)
                                 ->whereRaw("LENGTH(ruta_documento) != 0")
@@ -115,24 +130,31 @@ class DocumentosController extends Controller
                         ->count();
             $resultado1 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','SOLICITUD DE ADQUISICIÓN')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado2 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','PROCESO DE COMPRA')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado3 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','RECEPCIÓN DE INSUMOS MEDICOS, ADMINISTRATIVOS Y ACTIVOS FIJOS')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado4 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','TRÁMITE DE PAGO')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado5 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','GENERALIDADES EN EL CASO DE PENALIZACIONES AL PROVEDOR')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado6 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','SEGUIMIENTO')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado7 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','RENDICIÓN DE LA CUENTA PÚBLICA')
+                                ->where("aplica","=","si")
                                 ->get();
             $progreso = Documentos::where("licitacion_id","=",$id)
                                 ->whereRaw("LENGTH(ruta_documento) != 0")
@@ -146,24 +168,31 @@ class DocumentosController extends Controller
                         ->count();
             $resultado1 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','SOLICITUD DE ADQUISICIÓN')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado2 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','ADQUISICIONES DE BIENES Y SERVICIOS MEDIANTE LICITACIÓN PÚBLICA:')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado3 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','RECEPCIÓN DE INSUMOS MEDICOS, ADMINISTRATIVOS Y ACTIVOS FIJOS')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado4 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','TRÁMITE DE PAGO')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado5 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','GENERALIDADES EN EL CASO DE PENALIZACIONES AL PROVEDOR:')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado6 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','SEGUIMIENTO')
+                                ->where("aplica","=","si")
                                 ->get();
             $resultado7 = Documentos::where('licitacion_id','=',$id)
                                 ->where('categoria', '=','RENDICIÓN DE LA CUENTA PÚBLICA')
+                                ->where("aplica","=","si")
                                 ->get();
             $progreso = Documentos::where("licitacion_id","=",$id)
                                 ->whereRaw("LENGTH(ruta_documento) != 0")

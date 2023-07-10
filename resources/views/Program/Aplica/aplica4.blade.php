@@ -18,7 +18,7 @@ Auditoria de Invitacion restringida
         </tr>
         @foreach ($resultado1 as $item )
         <tr>
-            <form method="POST" action="{{route('documentos.store',$item->id)}}" enctype="multipart/form-data">
+            <form method="POST" action="{{route('documentos.aplica-store',$item->id)}}" enctype="multipart/form-data">
                 @method("PUT")
                 @csrf
                 <td>{{$item->requisito}}</td>
@@ -59,7 +59,7 @@ Auditoria de Invitacion restringida
         </tr>
         @foreach ($resultado2 as $item )
         <tr>
-            <form method="POST" action="{{route('documentos.store',$item->id)}}" enctype="multipart/form-data">
+            <form method="POST" action="{{route('documentos.aplica-store',$item->id)}}" enctype="multipart/form-data">
                 @method("PUT")
                 @csrf
                 <td>{{$item->requisito}}</td>
@@ -100,7 +100,7 @@ Auditoria de Invitacion restringida
         </tr>
         @foreach ($resultado3 as $item )
         <tr>
-            <form method="POST" action="{{route('documentos.store',$item->id)}}" enctype="multipart/form-data">
+            <form method="POST" action="{{route('documentos.aplica-store',$item->id)}}" enctype="multipart/form-data">
                 @method("PUT")
                 @csrf
                 <td>{{$item->requisito}}</td>
@@ -141,7 +141,7 @@ Auditoria de Invitacion restringida
         </tr>
         @foreach ($resultado4 as $item )
         <tr>
-            <form method="POST" action="{{route('documentos.store',$item->id)}}" enctype="multipart/form-data">
+            <form method="POST" action="{{route('documentos.aplica-store',$item->id)}}" enctype="multipart/form-data">
                 @method("PUT")
                 @csrf
                 <td>{{$item->requisito}}</td>
@@ -182,7 +182,7 @@ Auditoria de Invitacion restringida
         </tr>
         @foreach ($resultado5 as $item )
         <tr>
-            <form method="POST" action="{{route('documentos.store',$item->id)}}" enctype="multipart/form-data">
+            <form method="POST" action="{{route('documentos.aplica-store',$item->id)}}" enctype="multipart/form-data">
                 @method("PUT")
                 @csrf
                 <td>{{$item->requisito}}</td>
@@ -223,7 +223,7 @@ Auditoria de Invitacion restringida
         </tr>
         @foreach ($resultado6 as $item )
         <tr>
-            <form method="POST" action="{{route('documentos.store',$item->id)}}" enctype="multipart/form-data">
+            <form method="POST" action="{{route('documentos.aplica-store',$item->id)}}" enctype="multipart/form-data">
                 @method("PUT")
                 @csrf
                 <td>{{$item->requisito}}</td>
@@ -264,7 +264,7 @@ Auditoria de Invitacion restringida
         </tr>
         @foreach ($resultado7 as $item )
         <tr>
-            <form method="POST" action="{{route('documentos.store',$item->id)}}" enctype="multipart/form-data">
+            <form method="POST" action="{{route('documentos.aplica-store',$item->id)}}" enctype="multipart/form-data">
                 @method("PUT")
                 @csrf
                 <td>{{$item->requisito}}</td>
