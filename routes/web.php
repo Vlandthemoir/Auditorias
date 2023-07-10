@@ -53,6 +53,12 @@ Route::get('/documentos-regresar/{id}', [DocumentosController::class, 'regresar'
 Route::get('/documentos-anexos/{id}', [DocumentosController::class, 'anexos'])
 ->middleware('auth')
 ->name('documentos.anexos');
+Route::get('/documentos-aplica/{id}', [DocumentosController::class, 'aplicavista'])
+->middleware('auth')
+->name('documentos.aplica');
+Route::put('/documentos-aplica-store/{id}', [DocumentosController::class, 'aplica'])
+->middleware('auth')
+->name('documentos.aplica-store');
 /*rutas para los usuarios*/
 Route::get('/usuarios',[UsuariosController::class,'index'])
 ->middleware('auth')

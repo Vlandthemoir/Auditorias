@@ -21,6 +21,7 @@ class Documento2Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DIRECCIÓN DE ADMINISTRACIÓN Y FINANZAS',
+            'aplica' =>'',
         ]);
         DB::table('documentos')->insert([
             'licitacion_id' => $id,
@@ -30,6 +31,7 @@ class Documento2Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DIRECCIÓN DE ADMINISTRACIÓN Y FINANZAS',
+            'aplica' =>'',
         ]);
         DB::table('documentos')->insert([
             'licitacion_id' => $id,
@@ -39,6 +41,7 @@ class Documento2Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DIRECCIÓN DE ADMINISTRACIÓN Y FINANZAS',
+            'aplica' =>'',
         ]);
         DB::table('documentos')->insert([
             'licitacion_id' => $id,
@@ -48,6 +51,7 @@ class Documento2Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DIRECCIÓN DE ADMINISTRACIÓN Y FINANZAS',
+            'aplica' =>'',
         ]);
         DB::table('documentos')->insert([
             'licitacion_id' => $id,
@@ -57,6 +61,7 @@ class Documento2Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DIRECCIÓN DE ADMINISTRACIÓN Y FINANZAS',
+            'aplica' =>'',
         ]);
         DB::table('documentos')->insert([
             'licitacion_id' => $id,
@@ -66,6 +71,7 @@ class Documento2Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DIRECCIÓN DE ADMINISTRACIÓN Y FINANZAS',
+            'aplica' =>'',
         ]);
         DB::table('documentos')->insert([
             'licitacion_id' => $id,
@@ -75,6 +81,7 @@ class Documento2Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DIRECCIÓN DE ADMINISTRACIÓN Y FINANZAS',
+            'aplica' =>'',
         ]);
         DB::table('documentos')->insert([
             'licitacion_id' => $id,
@@ -84,6 +91,7 @@ class Documento2Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DIRECCIÓN DE ADMINISTRACIÓN Y FINANZAS',
+            'aplica' =>'',
         ]);
         DB::table('documentos')->insert([
             'licitacion_id' => $id,
@@ -93,6 +101,7 @@ class Documento2Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DIRECCIÓN DE PLANEACION',
+            'aplica' =>'',
         ]);
         DB::table('documentos')->insert([
             'licitacion_id' => $id,
@@ -102,6 +111,7 @@ class Documento2Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DIRECCIÓN DE PLANEACION',
+            'aplica' =>'',
         ]);
     }
 }

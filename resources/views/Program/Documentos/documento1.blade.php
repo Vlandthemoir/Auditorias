@@ -9,7 +9,7 @@ Auditoria de documentos a integrar al expediente del proyecto
     <h1>Progreso de los anexos:{{$porcentaje}}% <progress max="100" value="{{$porcentaje}}" class="php"></h1>
     <table class="table">
         <tr>
-            <th rowspan="2">Planeacion</th>
+            <th rowspan="2">Planeación</th>
             <th rowspan="2">Se cuenta con informacion</th>
             <th colspan="3">Acciones</th>
             <th rowspan="2">Area que genera la informacion</th>

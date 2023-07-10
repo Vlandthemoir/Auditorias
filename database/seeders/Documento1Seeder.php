@@ -21,6 +21,7 @@ class Documento1Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'LIDER DEL PROYECTO',
+            'aplica' =>'',
         ]);
         DB::table('documentos')->insert([
             'licitacion_id' => $id,
@@ -30,6 +31,7 @@ class Documento1Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'SD DE PLANEACION EN SALUD',
+            'aplica' =>'',
         ]);
         DB::table('documentos')->insert([
             'licitacion_id' => $id,
@@ -39,6 +41,7 @@ class Documento1Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'CONTROL PRESUPUESTAL',
+            'aplica' =>'',
         ]);
         DB::table('documentos')->insert([
             'licitacion_id' => $id,
@@ -48,6 +51,7 @@ class Documento1Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'SD DE PROGRAMACION, ORG Y PPTO',
+            'aplica' =>'',
         ]);
         DB::table('documentos')->insert([
             'licitacion_id' => $id,
@@ -57,6 +61,7 @@ class Documento1Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'SD DE PROGRAMACION, ORG Y PPTO',
+            'aplica' =>'',
         ]);
     }
 }

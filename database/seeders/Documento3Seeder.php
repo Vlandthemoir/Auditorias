@@ -21,6 +21,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'LIDER DEL PROYECTO',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -31,6 +32,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -41,6 +43,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -51,6 +54,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -61,6 +65,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -71,6 +76,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -81,6 +87,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -91,6 +98,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'ALMACEN ( SI ENTRO POR ALMACEN, SI FUE COMPRA DIRECTA EL LIDER DEL PROYECTO DEBE TENER LA INFORMACIÓN',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -101,6 +109,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -111,6 +120,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -121,6 +131,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -131,6 +142,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -141,6 +153,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -151,6 +164,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -161,6 +175,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -171,6 +186,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -181,6 +197,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -191,6 +208,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -201,6 +219,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -211,6 +230,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -221,6 +241,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -231,6 +252,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -241,6 +263,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -251,6 +274,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -261,6 +285,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DP',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -271,6 +296,7 @@ class Documento3Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DP',
+            'aplica' =>'',
         ]);
     }
 }

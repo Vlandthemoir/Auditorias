@@ -80,7 +80,7 @@ class LicitacionController extends Controller
             $seeder->run($ids);
         }
 
-        return redirect()->route("licitacion.create");
+        return redirect()->route("licitacion.index");
     }
     public function destroy(string $id)
     {

@@ -21,6 +21,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'LIDER DEL PROYECTO',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -31,6 +32,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'LIDER DEL PROYECTO',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -41,6 +43,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'LIDER DEL PROYECTO',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -51,6 +54,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'LIDER DEL PROYECTO',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -61,6 +65,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'LIDER DEL PROYECTO',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -71,6 +76,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'LIDER DEL PROYECTO',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -81,6 +87,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'LIDER DEL PROYECTO',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -91,6 +98,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DRM',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -101,6 +109,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DRM',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -111,6 +120,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DRM',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -121,6 +131,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DRM',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -131,6 +142,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DRM',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -141,6 +153,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DRM',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -151,6 +164,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DRM',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -161,6 +175,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DRM',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -171,6 +186,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DRM',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -181,6 +197,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DRM',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -191,6 +208,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DRM',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -201,6 +219,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DRM',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -211,6 +230,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DRM',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -221,6 +241,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DRM',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -231,6 +252,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DRM',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -241,6 +263,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DRM',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -251,6 +274,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DRM',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -261,6 +285,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DRM',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -271,6 +296,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'ALMACEN',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -281,6 +307,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'ALMACEN',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -291,6 +318,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'ALMACEN',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -301,6 +329,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'ALMACEN',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -311,6 +340,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -321,6 +351,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -331,6 +362,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -341,6 +373,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -351,6 +384,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -361,6 +395,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -371,6 +406,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -381,6 +417,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -391,6 +428,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -401,6 +439,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -411,6 +450,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -421,6 +461,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -431,6 +472,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -441,6 +483,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -451,6 +494,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -461,6 +505,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -471,6 +516,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -481,6 +527,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -491,6 +538,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -501,6 +549,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -511,6 +560,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'DAF',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -521,6 +571,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'',
+            'aplica' =>'',
         ]);
 
         DB::table('documentos')->insert([
@@ -531,6 +582,7 @@ class Documento6Seeder extends Seeder
             'ruta_documento' =>'',
             'comentario' =>'',
             'area' =>'',
+            'aplica' =>'',
         ]);
     }
 }

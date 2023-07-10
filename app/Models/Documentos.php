@@ -16,6 +16,7 @@ class Documentos extends Model
         'ruta_documento',
         'comentario',
         'area',
+        'aplica',
         ];
     //sobreescritura de las convenciones
     protected $table = 'documentos';

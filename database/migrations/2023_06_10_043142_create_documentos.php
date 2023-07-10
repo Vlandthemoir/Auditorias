@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('ruta_documento');
             $table->string('comentario');
             $table->string('area');
+            $table->string('aplica');
             $table->timestamp('fecha_creado')->nullable();
             $table->timestamp('fecha_modificado')->nullable();
         });

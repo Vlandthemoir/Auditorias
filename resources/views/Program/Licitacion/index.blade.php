@@ -35,6 +35,12 @@ Mis licitaciones
                 <button type="submit" id="add_document">Ver anexos</button>
                 </form>
             </td>
+            <td>
+                <form action="{{route('documentos.aplica',$item->id)}}">
+                @csrf
+                <button type="submit" id="add_document">Aplica</button>
+                </form>
+            </td>
             <td><form action="{{route('documentos.create',$item->id)}}">
                 @csrf
                 <button type="submit" id="add_document">Añadir documentos</button>
