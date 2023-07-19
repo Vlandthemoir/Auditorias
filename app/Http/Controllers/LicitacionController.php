@@ -26,9 +26,10 @@ class LicitacionController extends Controller
         return view('Program.Licitacion.index',compact('datos','urlPdf'));
     }
     public function create(){
-        return view('Program.Licitacion.create');
+        $datos = Usuarios::all();
+        return view('Program.Licitacion.create',compact('datos'));
     }
-    public function store(Request $request)
+        public function store(Request $request)
     {
         $licitacion = new Licitacion();
         $licitacion->usuario_id = auth()->user()->id;
@@ -39,9 +40,13 @@ class LicitacionController extends Controller
         $licitacion->fecha_recepcion = $request->post('fecha_recepcion');
         $licitacion->plazo_dias = $request->post('plazo_dias');
         $licitacion->formato_fecha = $request->post('formato_fecha');
-
-        
-        $fecha_base = $request->post('fecha_elaboracion');
+        $fecha_evaluar = $request->post('fecha_documentos');
+        if($fecha_evaluar == "Fecha de elaboracion"){
+            $fecha_base = $request->post('fecha_elaboracion');
+        }
+        if($fecha_evaluar == "Fecha de recepcion"){
+            $fecha_base = $request->post('fecha_recepcion');
+        }
         $dias_sumar = $request->post('plazo_dias');
         $calcular_fecha_timestamp = strtotime($fecha_base) + ($dias_sumar * 24 * 60 * 60);
         $fecha_calculada = date('Y-m-d', $calcular_fecha_timestamp);
@@ -79,7 +84,63 @@ class LicitacionController extends Controller
             $seeder = new Documento6Seeder();
             $seeder->run($ids);
         }
+        return redirect()->route("licitacion.index");
+    }
+    public function store_admin(Request $request)
+    {
+        $licitacion = new Licitacion();
+        $licitacion->usuario_id = $request->post('usuario_id');
+        $licitacion->nombre = $request->post('nombre');
+        $licitacion->folio = $request->post('folio');
+        $licitacion->area = $request->post('area');
+        $licitacion->fecha_elaboracion = $request->post('fecha_elaboracion');
+        $licitacion->fecha_recepcion = $request->post('fecha_recepcion');
+        $licitacion->plazo_dias = $request->post('plazo_dias');
+        $licitacion->formato_fecha = $request->post('formato_fecha');
+        $fecha_evaluar = $request->post('fecha_documentos');
+        if($fecha_evaluar == "Fecha de elaboracion"){
+            $fecha_base = $request->post('fecha_elaboracion');
+        }
+        if($fecha_evaluar == "Fecha de recepcion"){
+            $fecha_base = $request->post('fecha_recepcion');
+        }
+        $dias_sumar = $request->post('plazo_dias');
+        $calcular_fecha_timestamp = strtotime($fecha_base) + ($dias_sumar * 24 * 60 * 60);
+        $fecha_calculada = date('Y-m-d', $calcular_fecha_timestamp);
 
+        $licitacion->fecha_culminacion = $fecha_calculada;
+        $licitacion->save();
+
+        /*obtener el id de la licitaicon*/
+        $getfolio = $request->post('folio');
+        $getid = Licitacion::where('folio','=',$getfolio)->pluck('id');
+        $ids = implode(', ', $getid->toArray());
+        /*generar los requisitos*/
+        $documento = $request->post('area');
+        if($documento == 'Documentos a integrar'){
+            $seeder = new Documento1Seeder();
+            $seeder->run($ids);
+        }
+        if($documento == 'Contratacion de personal'){
+            $seeder = new Documento2Seeder();
+            $seeder->run($ids);
+        }
+        if($documento == 'Compras menores'){
+            $seeder = new Documento3Seeder();
+            $seeder->run($ids);
+        }
+        if($documento == 'Invitacion restringida'){
+            $seeder = new Documento4Seeder();
+            $seeder->run($ids);
+        }
+        if($documento == 'Adjudicacion directa'){
+            $seeder = new Documento5Seeder();
+            $seeder->run($ids);
+        }
+        if($documento == 'Licitacion publica'){
+            $seeder = new Documento6Seeder();
+            $seeder->run($ids);
+        }
         return redirect()->route("licitacion.index");
     }
     public function destroy(string $id)

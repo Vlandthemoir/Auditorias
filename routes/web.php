@@ -28,6 +28,9 @@ Route::get('/licitacion-create',[LicitacionController::class,'create'])
 Route::post('/licitacion-store',[LicitacionController::class,'store'])
 ->middleware('auth')
 ->name('licitacion.store');
+Route::post('/licitacion-store_admin',[LicitacionController::class,'store_admin'])
+->middleware('auth')
+->name('licitacion.store_admin');
 Route::get('/licitacion-all',[LicitacionController::class,'all'])
 ->middleware('auth')
 ->name('licitacion.all');
