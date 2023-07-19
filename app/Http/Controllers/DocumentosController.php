@@ -251,7 +251,7 @@ class DocumentosController extends Controller
             return view("Program.Anexos.anexo2");
         }
         if ($id== "Compras menores"){
-            return view("Program.Anexos.anex3");
+            return view("Program.Anexos.anexo3");
         }
         if ($id== "Invitacion restringida"){
             return view("Program.Anexos.anexo4");

@@ -36,7 +36,7 @@ class UsuariosController extends Controller
         $usuarios->correo_electronico = $request->input('correo_electronico');
         $usuarios->tipo_usuario = $request->input('tipo_usuario');
         if(!$request->input('contraseña') === null){
-            //$usuarios->contraseña = $usuarios->contraseña;
+            
             $usuarios->contraseña = bcrypt($request->input('contraseña'));
         }
         $usuarios->save();
