@@ -13,6 +13,7 @@ use Database\Seeders\Documento4Seeder;
 use Database\Seeders\Documento5Seeder;
 use Database\Seeders\Documento6Seeder;
 use Illuminate\Support\Facades\Storage;
+use Carbon\Carbon;
 //use Illuminate\Database\Seeder;
 
 class LicitacionController extends Controller
@@ -47,9 +48,26 @@ class LicitacionController extends Controller
         if($fecha_evaluar == "Fecha de recepcion"){
             $fecha_base = $request->post('fecha_recepcion');
         }
-        $dias_sumar = $request->post('plazo_dias');
-        $calcular_fecha_timestamp = strtotime($fecha_base) + ($dias_sumar * 24 * 60 * 60);
-        $fecha_calculada = date('Y-m-d', $calcular_fecha_timestamp);
+
+        $fechaCarbon = Carbon::parse($fecha_base);
+        if($request->post('formato_fecha') == "Habiles"){
+            $dias_sumar = $request->post('plazo_dias');
+            $calcular_fecha_timestamp = strtotime($fecha_base) + ($dias_sumar * 24 * 60 * 60);
+            $fecha_calculada = date('Y-m-d', $calcular_fecha_timestamp);
+        }
+        if($request->post('formato_fecha') == "Naturales"){
+            $nombreDiaSemana = $fechaCarbon->englishDayOfWeek;
+            if($nombreDiaSemana == "Saturday"){
+                $diaExtra = 2;
+            }
+            if($nombreDiaSemana == "Sunday"){
+                $diaExtra = 1;
+            }
+            $dias_sumar = $request->post('plazo_dias');
+            $calcular_fecha_timestamp = strtotime($fecha_base) + (($dias_sumar+$diaExtra) * 24 * 60 * 60);
+            $fecha_calculada = date('Y-m-d', $calcular_fecha_timestamp);
+        }
+        
 
         $licitacion->fecha_culminacion = $fecha_calculada;
         $licitacion->save();
