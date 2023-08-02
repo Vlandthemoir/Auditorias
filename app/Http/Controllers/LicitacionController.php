@@ -19,12 +19,9 @@ use Carbon\Carbon;
 class LicitacionController extends Controller
 {
     public function index(){
-        $archivoPdf = 'app/public/documento1.pdf';
-        $urlPdf = Storage::url($archivoPdf);
-        //dd($urlPdf);
         $id = auth()->user()->id;
         $datos = Licitacion::where('usuario_id','=',$id)->get();
-        return view('Program.Licitacion.index',compact('datos','urlPdf'));
+        return view('Program.Licitacion.index',compact('datos'));
     }
     public function create(){
         $datos = Usuarios::all();

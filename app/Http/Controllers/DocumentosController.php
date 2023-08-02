@@ -31,7 +31,9 @@ class DocumentosController extends Controller
             $progreso = Documentos::where("licitacion_id","=",$id)
                         ->whereRaw("LENGTH(ruta_documento) != 0")
                         ->count();
-            $porcentaje = (100/$cantidad_aplica)*$progreso;
+
+            $limitar_porcentaje = (100/$cantidad_aplica)*$progreso;
+            $porcentaje  = bcdiv($limitar_porcentaje, '1', 1);
             return view("Program.Documentos.documento1",compact('documento1','porcentaje'));
         }
         if($obtenerVista[0] == 'documento2'){
@@ -53,7 +55,9 @@ class DocumentosController extends Controller
             $progreso = Documentos::where("licitacion_id","=",$id)
                                 ->whereRaw("LENGTH(ruta_documento) != 0")
                                 ->count();
-            $porcentaje = (100/$cantidad_aplica)*$progreso;
+            
+            $limitar_porcentaje = (100/$cantidad_aplica)*$progreso;
+            $porcentaje  = bcdiv($limitar_porcentaje, '1', 1);
             return view("Program.Documentos.documento2",compact('resultado1','resultado2','resultado3','porcentaje'));
         }
         if($obtenerVista[0] == 'documento3'){
@@ -83,7 +87,9 @@ class DocumentosController extends Controller
             $progreso = Documentos::where("licitacion_id","=",$id)
                                 ->whereRaw("LENGTH(ruta_documento) != 0")
                                 ->count();
-            $porcentaje = (100/$cantidad_aplica)*$progreso;
+            
+            $limitar_porcentaje = (100/$cantidad_aplica)*$progreso;
+            $porcentaje  = bcdiv($limitar_porcentaje, '1', 1);
             return view("Program.Documentos.documento3",compact('resultado1','resultado2','resultado3','resultado4','resultado5','porcentaje'));
         }
         if($obtenerVista[0] == 'documento4'){
@@ -121,7 +127,9 @@ class DocumentosController extends Controller
             $progreso = Documentos::where("licitacion_id","=",$id)
                                 ->whereRaw("LENGTH(ruta_documento) != 0")
                                 ->count();
-            $porcentaje = (100/$cantidad_aplica)*$progreso;
+            
+            $limitar_porcentaje = (100/$cantidad_aplica)*$progreso;
+            $porcentaje  = bcdiv($limitar_porcentaje, '1', 1);
             return view("Program.Documentos.documento4",compact('resultado1','resultado2','resultado3','resultado4','resultado5','resultado6','resultado7','porcentaje'));
         }
         if($obtenerVista[0] == 'documento5'){
@@ -159,7 +167,9 @@ class DocumentosController extends Controller
             $progreso = Documentos::where("licitacion_id","=",$id)
                                 ->whereRaw("LENGTH(ruta_documento) != 0")
                                 ->count();
-            $porcentaje = (100/$cantidad_aplica)*$progreso;
+            
+            $limitar_porcentaje = (100/$cantidad_aplica)*$progreso;
+            $porcentaje  = bcdiv($limitar_porcentaje, '1', 1);
             return view("Program.Documentos.documento5",compact('resultado1','resultado2','resultado3','resultado4','resultado5','resultado6','resultado7','porcentaje'));
         }
         if($obtenerVista[0] == 'documento6'){
@@ -197,7 +207,9 @@ class DocumentosController extends Controller
             $progreso = Documentos::where("licitacion_id","=",$id)
                                 ->whereRaw("LENGTH(ruta_documento) != 0")
                                 ->count();
-            $porcentaje = (100/$cantidad_aplica)*$progreso;
+            
+            $limitar_porcentaje = (100/$cantidad_aplica)*$progreso;
+            $porcentaje  = bcdiv($limitar_porcentaje, '1', 1);
             return view("Program.Documentos.documento6",compact('resultado1','resultado2','resultado3','resultado4','resultado5','resultado6','resultado7','porcentaje'));
         }
     }

@@ -6,7 +6,57 @@ Auditoria de documentos a integrar al expediente del proyecto
 <link href="{{ asset('css/documentos.css') }}" rel="stylesheet">
 @section('content')
 <div class="container">
-    <h1>Progreso de los anexos:{{$porcentaje}}% <progress max="100" value="{{$porcentaje}}" class="php"></h1>
+    <h1>Progreso de los anexos:{{$porcentaje}}%
+        <progress max="100" value="{{$porcentaje}}" class="php"> 
+        @if ($porcentaje <= 25)
+            <style>
+                progress[value]::-moz-progress-bar {
+                background-image:-moz-linear-gradient( 135deg,transparent,
+                    transparent 33%,rgba(0,0,0,.1) 33%,rgba(0,0,0,.1) 66%,transparent 66%),
+                    -moz-linear-gradient( top,rgba(255, 255, 255, .25),rgba(0,0,0,.2)),
+                    -moz-linear-gradient( left,red,red);
+                background-size: 35px 20px, 100% 100%, 100% 100%;
+                border-radius:3px;
+                }
+            </style>
+        @endif
+        @if ($porcentaje > 25 && $porcentaje <= 50)
+            <style>
+                progress[value]::-moz-progress-bar {
+                background-image:-moz-linear-gradient( 135deg,transparent,
+                    transparent 33%,rgba(0,0,0,.1) 33%,rgba(0,0,0,.1) 66%,transparent 66%),
+                    -moz-linear-gradient( top,rgba(255, 255, 255, .25),rgba(0,0,0,.2)),
+                    -moz-linear-gradient( left,orange,orange);
+                background-size: 35px 20px, 100% 100%, 100% 100%;
+                border-radius:3px;
+                }
+            </style>
+        @endif
+        @if ($porcentaje > 50 && $porcentaje <= 75)
+            <style>
+                progress[value]::-moz-progress-bar {
+                background-image:-moz-linear-gradient( 135deg,transparent,
+                    transparent 33%,rgba(0,0,0,.1) 33%,rgba(0,0,0,.1) 66%,transparent 66%),
+                    -moz-linear-gradient( top,rgba(255, 255, 255, .25),rgba(0,0,0,.2)),
+                    -moz-linear-gradient( left,yellow,yellow);
+                background-size: 35px 20px, 100% 100%, 100% 100%;
+                border-radius:3px;
+                }
+            </style>
+        @endif
+        @if ($porcentaje > 75 && $porcentaje <= 100)
+            <style>
+                progress[value]::-moz-progress-bar {
+                background-image:-moz-linear-gradient( 135deg,transparent,
+                    transparent 33%,rgba(0,0,0,.1) 33%,rgba(0,0,0,.1) 66%,transparent 66%),
+                    -moz-linear-gradient( top,rgba(255, 255, 255, .25),rgba(0,0,0,.2)),
+                    -moz-linear-gradient( left,green,green);
+                background-size: 35px 20px, 100% 100%, 100% 100%;
+                border-radius:3px;
+                }
+            </style>
+        @endif
+    </h1>
     <table class="table">
         <tr>
             <th rowspan="2">Planeación</th>
