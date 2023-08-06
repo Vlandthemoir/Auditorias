@@ -233,7 +233,12 @@ class DocumentosController extends Controller
         $documento_encontrado->comentario = $request->post('comentario');//
         $documento_encontrado->area = $documento_encontrado->area;
         
-        $documento_encontrado->save();         
+        $documento_encontrado->save();
+        $licitacion_encontrada = Licitacion::find($documento_encontrado->licitacion_id);
+        $cantidad = intval($licitacion_encontrada->progreso_aplica)+1;
+        $licitacion_encontrada->progreso_aplica = $cantidad;
+        $licitacion_encontrada->save();       
+
         $id = $documento_encontrado->licitacion_id;
         return redirect()->route("documentos.create",$id);
     }
@@ -251,6 +256,12 @@ class DocumentosController extends Controller
         $documento_encontrado->comentario = "";
         $documento_encontrado->area = $documento_encontrado->area;
         $documento_encontrado->save();
+
+        $licitacion_encontrada = Licitacion::find($documento_encontrado->licitacion_id);
+        $cantidad = intval($licitacion_encontrada->progreso_aplica)-1;
+        $licitacion_encontrada->progreso_aplica = $cantidad;
+        $licitacion_encontrada->save();
+
         $id = $documento_encontrado->licitacion_id;
 
         return redirect()->route("documentos.create",$id);
@@ -406,7 +417,19 @@ class DocumentosController extends Controller
         $documento_encontrado->comentario = $documento_encontrado->comentario;//
         $documento_encontrado->area = $documento_encontrado->area;
         $documento_encontrado->aplica = $request->post('aplica');
-        
+
+        if($request->post('aplica') === "si"){
+            $licitacion_encontrada = Licitacion::find($documento_encontrado->licitacion_id);
+            $cantidad = intval($licitacion_encontrada->cantidad_aplica)+1;
+            $licitacion_encontrada->cantidad_aplica = $cantidad;
+            $licitacion_encontrada->save();  
+        }
+        if($request->post('aplica') === "no"){
+            $licitacion_encontrada = Licitacion::find($documento_encontrado->licitacion_id);
+            $cantidad = intval($licitacion_encontrada->cantidad_aplica)-1;
+            $licitacion_encontrada->cantidad_aplica = $cantidad;
+            $licitacion_encontrada->save();  
+        }
         $documento_encontrado->save();         
         $id = $documento_encontrado->licitacion_id;
         return redirect()->route("licitacion.index");

@@ -27,18 +27,17 @@ Auditoria de compras menores
                     <select name="aplica">
                         <option value="" disabled selected>Seleccionar</option>
                         <option value="si">si</option>
-                        <option value="no">no</option>
                     </select>
                     @endif
                     @if ($item->aplica == "si")
                     <select name="aplica">
-                        <option value="si">si</option>
+                        <option value="" disabled selected>si</option>
                         <option value="no">no</option>
                     </select>
                     @endif
                     @if ($item->aplica == "no")
                     <select name="aplica">
-                        <option value="no">no</option>
+                        <option value="" disabled selected>no</option>
                         <option value="si">si</option>
                     </select>
                     @endif
@@ -68,18 +67,17 @@ Auditoria de compras menores
                     <select name="aplica">
                         <option value="" disabled selected>Seleccionar</option>
                         <option value="si">si</option>
-                        <option value="no">no</option>
                     </select>
                     @endif
                     @if ($item->aplica == "si")
                     <select name="aplica">
-                        <option value="si">si</option>
+                        <option value="" disabled selected>si</option>
                         <option value="no">no</option>
                     </select>
                     @endif
                     @if ($item->aplica == "no")
                     <select name="aplica">
-                        <option value="no">no</option>
+                        <option value="" disabled selected>no</option>
                         <option value="si">si</option>
                     </select>
                     @endif
@@ -109,18 +107,17 @@ Auditoria de compras menores
                     <select name="aplica">
                         <option value="" disabled selected>Seleccionar</option>
                         <option value="si">si</option>
-                        <option value="no">no</option>
                     </select>
                     @endif
                     @if ($item->aplica == "si")
                     <select name="aplica">
-                        <option value="si">si</option>
+                        <option value="" disabled selected>si</option>
                         <option value="no">no</option>
                     </select>
                     @endif
                     @if ($item->aplica == "no")
                     <select name="aplica">
-                        <option value="no">no</option>
+                        <option value="" disabled selected>no</option>
                         <option value="si">si</option>
                     </select>
                     @endif
@@ -150,18 +147,17 @@ Auditoria de compras menores
                     <select name="aplica">
                         <option value="" disabled selected>Seleccionar</option>
                         <option value="si">si</option>
-                        <option value="no">no</option>
                     </select>
                     @endif
                     @if ($item->aplica == "si")
                     <select name="aplica">
-                        <option value="si">si</option>
+                        <option value="" disabled selected>si</option>
                         <option value="no">no</option>
                     </select>
                     @endif
                     @if ($item->aplica == "no")
                     <select name="aplica">
-                        <option value="no">no</option>
+                        <option value="" disabled selected>no</option>
                         <option value="si">si</option>
                     </select>
                     @endif
@@ -191,18 +187,17 @@ Auditoria de compras menores
                     <select name="aplica">
                         <option value="" disabled selected>Seleccionar</option>
                         <option value="si">si</option>
-                        <option value="no">no</option>
                     </select>
                     @endif
                     @if ($item->aplica == "si")
                     <select name="aplica">
-                        <option value="si">si</option>
+                        <option value="" disabled selected>si</option>
                         <option value="no">no</option>
                     </select>
                     @endif
                     @if ($item->aplica == "no")
                     <select name="aplica">
-                        <option value="no">no</option>
+                        <option value="" disabled selected>no</option>
                         <option value="si">si</option>
                     </select>
                     @endif

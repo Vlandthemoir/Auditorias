@@ -10,6 +10,8 @@ Mis licitaciones
     <table class="table">
         <tr>
             <th>Nombre</th>
+            <th>Progreso</th>
+            <th>Porcentaje</th>
             <th>Folio</th>
             <th>Area</th>
             <th>Fecha de elaboracion</th>
@@ -22,6 +24,15 @@ Mis licitaciones
         @foreach($datos as $item)
         <tr>
             <td>{{$item->nombre}}</td>
+            <td>
+                @if ($item->progreso_aplica > 0)
+                    <progress max="100" value="{{((100/$item->cantidad_aplica) * $item->progreso_aplica)}}" class="php"> 
+                @endif
+                @if ($item->progreso_aplica < 0)
+                    
+                @endif
+            </td>
+            <td>{{((100/$item->cantidad_aplica) * $item->progreso_aplica)}}%</td>
             <td>{{$item->folio}}</td>
             <td>{{$item->area}}</td>
             <td>{{$item->fecha_elaboracion}}</td>

@@ -27,7 +27,7 @@ class LicitacionController extends Controller
         $datos = Usuarios::all();
         return view('Program.Licitacion.create',compact('datos'));
     }
-        public function store(Request $request)
+    public function store(Request $request)
     {
         $licitacion = new Licitacion();
         $licitacion->usuario_id = auth()->user()->id;
@@ -72,6 +72,8 @@ class LicitacionController extends Controller
         
 
         $licitacion->fecha_culminacion = $fecha_calculada;
+        $licitacion->cantidad_aplica = "0";
+        $licitacion->progreso_aplica = "0";
         $licitacion->save();
 
         /*obtener el id de la licitaicon*/
@@ -129,6 +131,8 @@ class LicitacionController extends Controller
         $fecha_calculada = date('Y-m-d', $calcular_fecha_timestamp);
 
         $licitacion->fecha_culminacion = $fecha_calculada;
+        $licitacion->cantidad_aplica = "0";
+        $licitacion->progreso_aplica = "0";
         $licitacion->save();
 
         /*obtener el id de la licitaicon*/
@@ -171,7 +175,7 @@ class LicitacionController extends Controller
     }
     public function all(){
         $datos = Usuarios::join('licitacion', 'usuarios.id', '=', 'licitacion.usuario_id')
-                    ->select('licitacion.id','usuarios.usuario','licitacion.nombre','licitacion.folio','licitacion.area','licitacion.fecha_elaboracion','licitacion.fecha_recepcion','licitacion.fecha_culminacion')->get();
+                    ->select('licitacion.id','usuarios.usuario','licitacion.nombre','licitacion.folio','licitacion.area','licitacion.fecha_elaboracion','licitacion.fecha_recepcion','licitacion.fecha_culminacion','licitacion.cantidad_aplica','licitacion.progreso_aplica')->get();
         return view('Program.Licitacion.all',compact('datos'));
     }
     public function edit(string $id)

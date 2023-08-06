@@ -22,6 +22,8 @@ return new class extends Migration
             $table->string('plazo_dias');
             $table->string('formato_fecha');
             $table->date('fecha_culminacion');
+            $table->string('cantidad_aplica');
+            $table->string('progreso_aplica');
             $table->timestamp('fecha_creado')->nullable();
             $table->timestamp('fecha_modificado')->nullable();
         });

@@ -18,6 +18,8 @@ class Licitacion extends Model
         'plazo_dias',
         'formato_fecha',
         'fecha_culminacion',
+        'cantidad_aplica',
+        'progreso_aplica',
         ];
     //sobreescritura de las convenciones
     protected $table = 'licitacion';
