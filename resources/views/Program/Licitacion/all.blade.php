@@ -12,7 +12,7 @@ Todas las licitaciones
             <th>Licitacion</th>
             <th>Progreso</th>
             <th>Porcentaje</th>
-            <th>estado</th>
+
             <th>Folio</th>
             <th>Area</th>
             <th>Fecha de elaboracion</th>
